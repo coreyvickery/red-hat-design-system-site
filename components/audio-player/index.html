@@ -1,0 +1,750 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Audio player | Red Hat Design System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177008280-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-177008280-1');
+  </script>
+  <script src="/red-hat-design-system-site/js/global.js"></script>
+
+  <link rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-theme/4/advanced-theme.css">
+  <link rel="stylesheet" href="/red-hat-design-system-site/css/styles.css">
+  <link rel="stylesheet" rel="stylesheet" href="//static.redhat.com/libs/redhat/redhat-font/2/webfonts/red-hat-font.css" media="all" />
+  <link rel="stylesheet" href="https://static.redhat.com/libs/redhat/redhat-theme/4/advanced-theme.css">
+  
+  <link rel="stylesheet" href="/red-hat-design-system-site/node_modules/@patternfly/pfelement/dist/pfelement.min.css">
+  <noscript>
+    <link type="text/css" href="/red-hat-design-system-site/node_modules/@patternfly/pfelement/dist/pfelement--noscript.min.css">
+  </noscript>
+
+  <script type="module" src="/red-hat-design-system-site/node_modules/@patternfly/pfe-cta/dist/pfe-cta.min.js"></script>
+</head>
+
+
+
+
+  
+
+
+<body class="page page--audio-player" id="top" unresolved>
+  <div class="body-inner">
+
+    
+
+
+
+<script type="text/javascript">
+(function() { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = '//api.usersnap.com/load/4a8eca9f-e612-466c-ba21-5c98236daf99.js';
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+</script>
+
+<header class="l-header">
+  <div class="l-header__logo-bar">
+    <img class="l-header__logo" src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--hat-only.svg" alt="Red Hat" style="max-width:50px" />
+  </div>
+  <input id="mobile-menu-toggle" class="menu-toggle element-invisible" type="checkbox" aria-controls="mobile-menu-menu-container">
+  <label class="menu-toggle__button" for="mobile-menu-toggle" data-controls="mobile-menu-menu-container">
+    Menu
+    <span class="menu-toggle-assistive-text element-invisible">, Toggle visibility</span>
+  </label>
+  <div class="menu-toggle__toggleable">
+    <nav class="l-header__site-navigation site-navigation menu-toggle__toggleable-content-wrapper">
+      <ul class="site-navigation__wrapper">
+        <li class="site-navigation__item">
+          
+  
+  
+  <a class="site-navigation__link" href="/red-hat-design-system-site/">
+    Home
+  </a>
+
+        </li>
+        <li class="site-navigation__item">
+          
+  
+  
+  <a class="site-navigation__link" href="/red-hat-design-system-site/about/">
+    About this website
+  </a>
+
+        </li>
+        <li class="site-navigation__item">
+          
+  
+  
+  <a class="site-navigation__link" href="/red-hat-design-system-site/design-code-status/">
+    Design/code status
+  </a>
+
+        </li>
+        <li class="site-navigation__item">
+          
+  
+  
+  <a class="site-navigation__link" href="/red-hat-design-system-site/release-notes/">
+    Release notes
+  </a>
+
+        </li>
+        <li class="site-navigation__item">
+          
+          
+            
+          
+          <details  open>
+            <summary class="site-navigation__heading">Components</summary>
+            <ul class="site-navigation__sub-menu">
+              <li class="site-navigation__sub-menu__item">
+                
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components">
+    All components
+  </a>
+
+              </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/accordion/">
+    Accordion
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/alert/">
+    Alert
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/announcement-banner/">
+    Announcement banner
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+    
+  
+  <a class="site-navigation__sub-menu__link site-navigation__sub-menu__link--active" href="/red-hat-design-system-site/components/audio-player/">
+    Audio player
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/blockquote/">
+    Blockquote
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/button/">
+    Button
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/cta/">
+    Call to action
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/card/">
+    Card
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/cookie-banner/">
+    Cookie banner
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/avatar/">
+    Default avatar
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/disclosure/">
+    Disclosure
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/filter/">
+    Filter
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/footer_group/">
+    Footer group
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/form/">
+    Form
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/jump-links-vertical/">
+    Jump links
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/link-with-icon 2/">
+    Link with icon
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/link-with-icon/">
+    Link with icon
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/modal/">
+    Modal
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/navigation/">
+    Navigation
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/promo-banner/">
+    Promo banner
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/search_bar/">
+    Search bar
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/skip-to-main 2/">
+    Skip to main
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/skip-to-main/">
+    Skip to main
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/sticky-banner/">
+    Sticky banner
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/sticky-card/">
+    Sticky card
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/tabs/">
+    Tabs
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/tooltip/">
+    Tooltip
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/components/video-thumbnail/">
+    Video thumbnail
+  </a>
+
+                </li></ul>
+          </details>
+        </li>
+
+        <li class="site-navigation__item">
+          
+          
+          <details >
+            <summary class="site-navigation__heading">Foundations</summary>
+            <ul class="site-navigation__sub-menu"><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/foundations/color/">
+    Color
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/foundations/typography/">
+    Typography
+  </a>
+
+                </li><li class="site-navigation__sub-menu__item">
+                  
+  
+  
+  <a class="site-navigation__sub-menu__link" href="/red-hat-design-system-site/foundations/grid/">
+    Grid
+  </a>
+
+                </li></ul>
+          </details>
+        </li>
+        <li class="site-navigation__item">
+          
+  
+  
+  <a class="site-navigation__link" href="/red-hat-design-system-site/get-started/">
+    Get started
+  </a>
+
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="l-main">
+  <article class="l-main__inner">
+    <header class="l-main__header l-main__header--palette-lighter">
+      <div class="container header">
+        <h1 class="page-title">Audio player</h1>
+      </div>
+    </header>
+    <div class="l-main__content">
+      <div class="container">
+        
+
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Overview</h2>
+    <p>An audio player is a set of interactive playback controls used to play audio clips.</p>
+  </section>
+
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Sample component</h2>
+    <div>
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-sample-1@2x.png" alt="Example of an audio player" style="--inline-img-max-width: 555px;">
+  </div>
+  </section>
+
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Component status</h2>
+    <rhds-component-status component="Audio player"></rhds-component-status>
+  </section>
+
+
+<hr class="margin-top--10 margin-bottom--10">
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Style</h2>
+    <p>An audio player can be used in light and dark themes. It consists of controls used to customize a user’s listening experience. A <a href="../tooltip">Tooltip</a> is also included if a user wants to identify a specific timecode on the progress bar.</p>
+  
+  <div class="example example--palette-light">
+    
+    
+  <div class="centered margin-top--4 margin-bottom--4">
+    <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-style-1@2x.png" alt="Anatomy of an audio player" style="--example-img-max-width: 590px;">
+  </div>
+  </div>
+
+  </section>
+
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Theme</h2>
+    
+  <div class="example example--palette-light">
+    
+    
+    <div class="centered margin-top--4 margin-bottom--4">
+      <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-theme-1@2x.png" alt="Example of audio player in a light theme" style="--example-img-max-width: 555px;">
+    </div>
+  </div>
+
+
+  
+  <div class="example example--palette-light">
+    
+    
+    <div class="centered margin-top--1 margin-bottom--1">
+      <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-theme-2@2x.png" alt="Example of audio player in a dark theme" style="--example-img-max-width: 555px;">
+    </div>
+  </div>
+
+  </section>
+
+
+<hr class="margin-top--10 margin-bottom--10">
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Usage</h2>
+    <p>An audio player gives users an easy way to listen to audio clips in the browser.</p>
+
+  <h3>Layout</h3>
+  <p>An audio player can be used in any layout. For example, it can be grouped with text or other elements. It can span the same amount of grid columns as the text around it for a more cohesive grouping.<p>
+
+    
+  <div class="example example--palette-light">
+    
+    
+      <div class="centered margin-top--4 margin-bottom--4">
+        <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-usage-1@2x.png" alt="Example of audio player in a layout" style="--example-img-max-width: 555px;">
+      </div>
+  </div>
+
+
+    
+  <div class="example example--palette-light">
+    
+    
+      <div class="centered margin-top--1 margin-bottom--1">
+        <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-usage-2@2x.png" alt="Example of audio player in a layout" style="--example-img-max-width: 555px;">
+      </div>
+  </div>
+
+  </section>
+
+
+<hr class="margin-top--2 margin-bottom--9">
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Best practices</h2>
+    <p>Don’t place a dark theme audio player in a light environment.</p>
+    
+  <div class="example example--palette-wrong">
+    
+    
+      <div class="inline-flex centered margin-top--1 margin-bottom--1">
+      <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-bestpractice-1@2x.png" alt="Dark themed audio player in a light environment" style="--example-img-max-width: 555px;">
+      </div>
+  </div>
+
+  </section>
+
+
+<hr class="margin-top--10 margin-bottom--10">
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Behavior</h2>
+    <h3>Accessibility</h3>
+    <p>For better accessibility, a user can control an audio player with their keyboard.</p>
+
+    <ul>
+        <li>When the play or pause button is focused, pressing <i>Space</i> or <i>Enter</i> will play or pause the audio.</li>
+        <li>When the progress bar is focused, pressing the left or right arrows will rewind or advance the audio by 10 seconds after each press.</li>
+        <li>When the volume icon is focused, pressing the up or down keys will increase or lower the volume by 10% after each press.
+            <ul>
+                <li>When the volume icon is focused, pressing Space or Enter will mute the volume.</li>
+            </ul>
+        </li>
+        <li>When the gear icon is focused, pressing Space or Enter makes the playback speed tooltip appear.
+            <ul>
+                <li>Pressing <i>Tab</i> and the arrow keys after that scrolls through playback speed options.</li>
+                <li>Pressing Enter or Space after that confirms a new playback speed.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Autoplay</h3>
+    <p>When a page loads, an audio player should never play audio automatically, it should always wait for user input before playing anything.</p>
+
+    <h3>Volume</h3>
+    <p>When a page loads, an audio player can display a full volume and not be muted, but the audio should never play automatically.</p>
+
+    <h3>Controls</h3>
+    <p>The playback controls change states as a user interacts with them. For example, when a user mutes the volume, the icon will change to display a muted icon instead.</p>
+
+    <h3>Timecode</h3>
+    <p>A timecode indicates how much time has elapsed since the audio started playing. There’s a timecode in the form of text next to the progress bar that updates as audio plays. If a user wants to find a specific timecode, they can hover over the progress bar as audio plays. A small tooltip appears above the progress bar displaying the precise timecode, depending on where a user’s cursor is.</p>
+
+    
+  <div class="example example--palette-light">
+    
+    
+      <div class="inline-flex centered margin-top--4 margin-bottom--4">
+      <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-behavior-1@2x.png" alt="Tooltip showing timecode on an audio player" style="--example-img-max-width: 555px;">
+      </div>
+  </div>
+
+  </section>
+
+
+<hr class="margin-top--10 margin-bottom--10">
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Responsive design</h2>
+    <p>An audio player works well on both large and small screens.</p>
+
+    <h3>Breakpoints</h3>
+
+    <p>An audio player can be used on smaller screens. The progress bar shrinks as space reduces, but the rest of the controls stay in the same position and maintain the same spacing.</p>
+
+    <h3>Desktop</h3>
+
+    <div class="margin-top--1 margin-bottom--1">
+      <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-responsive-1@2x.png" alt="Audio player on desktop">
+    </div>
+
+    <h3>Tablet</h3>
+
+    <div class="margin-top--1 margin-bottom--1">
+      <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-responsive-2@2x.png" alt="Audio player on tablet" style="--inline-img-max-width: 768px;">
+    </div>
+
+    <h3>Mobile</h3>
+
+    <div class="margin-top--1 margin-bottom--1">
+      <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-responsive-3@2x.png" alt="Audio player on mobile" style="--inline-img-max-width: 360px;">
+    </div>
+  </section>
+
+
+<hr class="margin-top--9 margin-bottom--9">
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Interaction states</h2>
+    <p>Only the playback controls have interaction states.</p>
+
+<h3>Default</h3>
+
+  <div class="example example--palette-light">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-1@2x.png" alt="Audio player showing default interaction state in a light theme" style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+
+
+  <div class="example example--palette-darkest">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-2@2x.png" alt="Audio player showing default interaction state in a dark theme" style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+
+<h3>Focus</h3>
+
+  <div class="example example--palette-light">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-3@2x.png" alt="Audio player showing focus states in a light theme" style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+
+
+  <div class="example example--palette-darkest">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-4@2x.png" alt="Audio player showing focus states in a dark theme" style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+
+<h3>Hover</h3>
+
+  <div class="example example--palette-light">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-5@2x.png" alt="Audio player showing hover states in a light theme" style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+
+
+  <div class="example example--palette-darkest">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-6@2x.png" alt="Audio player showing hover states in a dark theme" style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+
+<h3>Active</h3>
+
+  <div class="example example--palette-light">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-7@2x.png" alt="Audio player showing active states in a light theme" style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+
+
+  <div class="example example--palette-darkest">
+    
+    
+  <div class="centered margin-top--1 margin-bottom--1">
+  <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-interaction-8@2x.png" alt="Audio player showing active states in a dark theme"
+  style="--example-img-max-width: 555px;">
+  </div>
+  </div>
+
+  </section>
+
+
+<hr class="margin-top--10 margin-bottom--10">
+
+
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Spacing</h2>
+    <p>An audio player uses <a href="https://www.patternfly.org/v4/design-guidelines/styles/spacers">PatternFly 4 spacers</a> to define spacing values between elements.</p>
+
+  
+  <div class="example example--palette-light">
+    
+    
+    <div class="inline-flex centered margin-top--1 margin-bottom--1">
+    <img src="/red-hat-design-system-site/assets/audioplayer/audioplayer-spacing-1@2x.png" alt="Audio player with spacers" style="--example-img-max-width: 490px;">
+    </div>
+  </div>
+
+  </section>
+
+
+<hr class="margin-top--10 margin-bottom--10">
+
+<div class="multi-column--min-300-wide">
+  
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Related components</h2>
+    <ul>
+        <li><a href="../tooltip">Tooltip</a></li>
+    </ul>
+  </section>
+
+
+  
+  <section class="section section--palette-default container">
+    <h2 class="section-title">Feedback</h2>
+    <p>For feedback and bug reports, create an issue <a href="https://github.com/patternfly/patternfly-elements">in our GitHub repository</a>.</p>
+  </section>
+
+</div>
+
+      </div>
+    </div>
+  </article>
+  <footer class="main-footer">
+    <img style="max-width: 135px;" src="https://static.redhat.com/libs/redhat/brand-assets/2/corp/logo--on-dark.svg" alt="Red Hat" />
+</footer> 
+
+<div class="back-to-top">
+    <a href="#top" class="back-to-top-link">
+        <img src="/red-hat-design-system-site/assets/back-to-top.svg" alt="Scroll back to the top">
+    </a>
+</div>
+</main>
+
+
+  </div>
+</body>
+
+</html>
